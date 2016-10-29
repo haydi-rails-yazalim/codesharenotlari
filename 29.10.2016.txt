@@ -86,7 +86,61 @@ school.each_with_index do |okul, index|
   puts "Benim okulum #{okul} #{index + 1}. sırada"
 end
 
+#Metotlar= method isimleri küçük harfle başlar.
 
+def parametresiz
+  puts "ben parametre almayan bir metodum"
+end
+
+parametresiz
+
+
+
+def toplama(a, b)
+  # iki parametre alan metot.
+end
+
+#Hata çıkınca
+#Tahtaya ayzılan kod
+def name (name)
+  puts "#{name} Merhaba!"
+end
+name ("your_name")
+#tahtaya yazılan 2. kod
+#parametre olarak dizi(yada dizi gibi şeyleri) almak için *değişken kullanılır
+
+def meyveler(*fruits)
+#Yıldız koyulmazsa alınacak hata:
+#`meyveler': wrong number of arguments (given 3, expected 1) (ArgumentError) 
+  fruits.each do |meyve|
+	puts meyve
+  end
+end
+	meyveler("elma","armut","nar") 
+
+.....
+  
+def meyveler(a,*fruits)
+  fruits.each do |n|
+    puts n
+	end
+		puts a
+	end
+	meyveler("life","armut","nar") 
+
+
+def toplama(one, *all)
+  sum = 0
+  all.map { |n| sum += n }
+  sum + one
+end
+
+puts toplama(3,543,12,76)
+
+# kopyala beni nolur
+
+#test için:
+https://relishapp.com/rspec/docs/gettingstarted
 
 
 
