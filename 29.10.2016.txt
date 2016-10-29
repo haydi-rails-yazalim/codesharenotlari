@@ -77,6 +77,14 @@ for c in 1...3
   puts "Sen #{c}. misin?"
 end
 
+for c in (0..10).step(5)
+   puts "Sen #{c}. misin?"
+end
+
+school = ["ktü", "itü", "ytü", "odtü"]
+school.each_with_index do |okul, index|
+  puts "Benim okulum #{okul} #{index + 1}. sırada"
+end
 
 
 
